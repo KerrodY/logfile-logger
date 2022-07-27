@@ -4,10 +4,10 @@
 
 `const log = require('logfile-logger')`
 
-Logging to console:
+### Logging to console:
 `log.console(<message>)` 
 
-Logging to logfile:
+### Logging to logfile:
 
 simple (this logs to a file called logs.txt in utf8 encoding): 
     `log.file(<message>)`
