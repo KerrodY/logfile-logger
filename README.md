@@ -2,9 +2,7 @@
 
 ## Usage
 
-`require('logfile-logger')`
-
-`const log = new Logger`
+`const log = require('logfile-logger')`
 
 Logging to console:
 `log.console(<message>)` 
