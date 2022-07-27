@@ -1,0 +1,11 @@
+{
+  "name": "logfile-logger",
+  "version": "1.0.0",
+  "description": "A simple package that allows you to log from your program to a log file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KerrodY",
+  "license": "ISC"
+}
