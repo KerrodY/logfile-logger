@@ -1,16 +1,22 @@
+const fs = require('fs')
 
 class Logger {
-
-    fs = require('fs')
 
     console(message) {
         console.log(`LOGGER: ${message}`)
     }
 
     file (message, logfile = 'logs.txt', encoding = 'utf8') {
-        fs.writeFile(logfile, `\n${message}`, { encoding: encoding }, (err) => {
+        fs.appendFile(logfile, `${message}\n`, { encoding: encoding }, (err) => {
              `ERROR SAVING TO LOGFILE ${logfile} : console.log(err)`
         });
+    }
+
+    everywhere (message, logfile = 'logs.txt', encoding = 'utf8') {
+        fs.appendFile(logfile, `${message}\n`, { encoding: encoding }, (err) => {
+            return `ERROR SAVING TO LOGFILE ${logfile} : console.log(err)`
+        });
+        console.log(`${message} | logged in: ${logfile}`)
     }
 }
 
