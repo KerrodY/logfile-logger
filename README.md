@@ -2,19 +2,19 @@
 
 ## Usage
 
-`require('logfile-logger')`
+`const log = require('logfile-logger')`
 
-`const log = new Logger`
-
-Logging to console:
+### Logging to console:
 `log.console(<message>)` 
 
-Logging to logfile:
+### Logging to logfile:
 
 simple (this logs to a file called logs.txt in utf8 encoding): 
-    `log.file(<message>)`
+
+`log.file(<message>)`
 
 advanced (`logfile name` and `encoding` are optional)
+
 `log.file(<mesasge>, <logfile name>.txt, <encoding>)`
 
 note: `encoding` can be, `ascii`, `utf8` or `base64`
