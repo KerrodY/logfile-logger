@@ -1,16 +1,16 @@
 const fs = require('fs')
 
-class Logger {
+module.exports = {
 
     console(message) {
         console.log(`LOGGER: ${message}`)
-    }
+    },
 
     file (message, logfile = 'logs.txt', encoding = 'utf8') {
         fs.appendFile(logfile, `${message}\n`, { encoding: encoding }, (err) => {
              `ERROR SAVING TO LOGFILE ${logfile} : console.log(err)`
         });
-    }
+    },
 
     everywhere (message, logfile = 'logs.txt', encoding = 'utf8') {
         fs.appendFile(logfile, `${message}\n`, { encoding: encoding }, (err) => {
@@ -20,4 +20,3 @@ class Logger {
     }
 }
 
-module.exports = Logger
