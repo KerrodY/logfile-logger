@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/KerrodY/logfile-logger/issues"
   },
-  "homepage": "https://github.com/KerrodY/logfile-logger#readme"
+  "homepage": "https://github.com/KerrodY/logfile-logger#readme",
+  "dependencies": {
+    "@kerrody/logfile-logger": "^1.0.0"
+  }
 }
