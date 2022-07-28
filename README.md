@@ -14,7 +14,7 @@
 
 ### Logging to console and logfile:
 
-`log.everywhere(<mesasge>, <logfile_name>.txt, <encoding>)`
+`log.everywhere(<mesasge>, <logfile_name.txt>, <encoding>)`
 
 
 #### Note: 
