@@ -15,13 +15,13 @@ simple (this logs to a file called logs.txt in utf8 encoding):
 
 advanced (`logfile name` and `encoding` are optional)
 
-`log.file(<mesasge>, <logfile name>.txt, <encoding>)`
+`log.file(<mesasge>, <logfile_name>.txt, <encoding>)`
 
 ### Logging to console and logfile:
 
-`log.everywhere(<mesasge>, <logfile name>.txt, <encoding>)`
+`log.everywhere(<mesasge>, <logfile_name>.txt, <encoding>)`
 
 
-note: 
+#### Note: 
 - `encoding` can be, `ascii`, `utf8` or `base64`
-- `logfile name` and `encoding` are optional, if not parsed `logs.txt` and `utf8` will be used by default
+- `logfile_name` and `encoding` are optional, if not parsed `logs.txt` and `utf8` will be used by default
