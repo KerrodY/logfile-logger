@@ -2,7 +2,7 @@
 
 ## Usage
 
-`const log = require('logfile-logger')`
+`const log = require('@kerrody/logfile-logger')`
 
 ### Logging to console:
 
