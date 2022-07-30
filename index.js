@@ -1,5 +1,5 @@
 const fs = require('fs')
-const dateTime = require('DateTime')
+const dateTime = require('./DateTime')
 module.exports = {
 
     console(message) {
