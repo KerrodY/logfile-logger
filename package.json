@@ -1,6 +1,6 @@
 {
-  "name": "@kerrody/logfile-logger",
-  "version": "1.0.3",
+  "name": "logfile-logger",
+  "version": "1.0.0",
   "description": "A simple package that allows you to log from your program to a log file.",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,10 @@
   "keywords": [
     "logger",
     "logfile",
-    "logging"
+    "logging",
+    "logs",
+    "log",
+    "debug"
   ],
   "bugs": {
     "url": "https://github.com/KerrodY/logfile-logger/issues"
