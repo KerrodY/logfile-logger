@@ -7,16 +7,16 @@ module.exports = {
     },
 
     file (message, logfile = 'logs.txt', encode = 'utf8') {
-        fs.appendFile(logfile, dateTime.getDateTime() + message + `\n`, { encoding: encode }, (err) => {
+        fs.appendFile(logfile, dateTime.getDateTime() + message + '\n', { encoding: encode }, (err) => {
             return `ERROR SAVING TO LOGFILE ${logfile} : ${console.log(err)}`
         });
     },
 
     everywhere (message, logfile = 'logs.txt', encode = 'utf8') {
-        fs.appendFile(logfile, dateTime.getDateTime() + message + `\n`, { encoding: encode }, (err) => {
+        fs.appendFile(logfile, dateTime.getDateTime() + message + '\n', { encoding: encode }, (err) => {
             return `ERROR SAVING TO LOGFILE ${logfile} : ${console.log(err)}`
         }); 
-        console.log(`${message}\n    -> logged @ ${logfile}\n`)
+        console.log(dateTime.getDateTime() + message + '\n    -> logged @ ' + logfile + '\n')
     }
 }
 
