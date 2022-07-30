@@ -12,7 +12,7 @@ module.exports = {
         });
     },
 
-    everywhere (message, logfile = 'logs.txt', encoding = 'utf8') {
+    everywhere (message, logfile = 'logs.txt', encode = 'utf8') {
         fs.appendFile(logfile, `${dateTime.getDateTime()}${message}\n`, { encoding: encode }, (err) => {
             return `ERROR SAVING TO LOGFILE ${logfile} : ${console.log(err)}`
         }); 
